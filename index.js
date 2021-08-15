@@ -41,7 +41,8 @@ questionFive = {
 }
 
 var question = [questionOne, questionTwo, questionThree, questionFour, questionFive]
-
+var userName = readlineSync.question('Enter your username ');
+console.log('Hi ' + userName + '!');
 
 for (var i = 0; i < question.length; i++) {
   play(question[i].question, question[i].answer)
